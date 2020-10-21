@@ -41,3 +41,6 @@ jobs:
           GPG_SECRET_PASSPHRASE: ${{ secrets.GPG_SECRET_PASSPHRASE }}
           KEYSTORE_PASS: ${{ secrets.KEYSTORE_PASS }}
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
+   
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
